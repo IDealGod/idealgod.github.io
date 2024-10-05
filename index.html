@@ -18,22 +18,31 @@
             height: 100vh;
             animation: glow 2s infinite alternate;
         }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e600ff, 0 0 20px #e600ff, 0 0 25px #e600ff, 0 0 30px #e600ff, 0 0 35px #e600ff;
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e600ff, 0 0 40px #e600ff, 0 0 50px #e600ff, 0 0 60px #e600ff, 0 0 70px #e600ff;
+            }
+        }
         .container {
             max-width: 800px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 00, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
+            text-align: center;
         }
         .container:hover {
-            transform: scale(1.2);
+            transform: scale(1.05);
             box-shadow: 0 0 20px rgba(161, 0, 255, 0.5), 0 0 40px rgba(200, 0, 255, 0.3), 0 0 60px rgba(238, 0, 255, 0.1);
         }
         h1 {
             color: #333;
-            text-align: center;
+            margin-bottom: 20px;
         }
         p {
             color: #666;
@@ -49,6 +58,15 @@
         .project h3 {
             color: #333;
             margin-top: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -68,8 +86,11 @@
             <h2>业务</h2>
             <p>可定制<strong>水影、视觉、功能</strong></p>
             <p>出售<strong>水影、视觉、功能、半脱、客户端</strong>等源码</p>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
+</div>
+<div class="footer">
+    <p>&copy; 2024 IDeal. All rights reserved.</p>
 </div>
 </body>
 </html>
